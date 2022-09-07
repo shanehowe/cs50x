@@ -1,0 +1,355 @@
+body {
+    background: #0a192f;
+}
+
+a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #64ffda
+}
+
+.nav {
+    height: 5rem;
+    padding: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: #8892b0;
+}
+.nav-link:hover {
+    color: #64ffda;
+}
+
+#active {
+    color: #64ffda;
+}
+
+.hero {
+    padding: 60px 10px;
+    color: #e6f1ff;
+    max-width: 100%;
+    margin-bottom: 10rem;
+
+  }
+
+
+
+
+
+  /* hero styles*/
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+
+}
+
+
+#hero-container #greeting p {
+  color: #64ffda;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+
+}
+
+#hero-container #name h1 {
+    font-size: 5rem;
+    padding: 1.5rem;
+
+}
+
+#hero-container #focus p {
+    color: #8892b0;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+}
+
+
+#about {
+    padding: 0px 10px;
+    color: #e6f1ff;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.hobbies {
+  background-color: #112240;
+  height: auto;
+  width: 75%;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #8892b0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hobbies p {
+  padding: 15px 10px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+#projects {
+    padding: 0px 10px;
+    color: #e6f1ff;
+    max-width: 100%;
+    margin-bottom: 7rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1.5px 1.5px 6px #8892b0;
+    color: #e6f1ff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+
+ #projects {
+    margin-top: 3rem;
+ }
+
+  #projects h4 {
+    font-size: 1.5rem;
+
+  }
+
+  #projects p {
+    color: #8892b0;
+  }
+
+  #projects i {
+    font-size: 1.6rem;
+  }
+
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+
+
+  }
+
+  .projects-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    justify-self: center;
+    text-align: center;
+    background-color: #112240;
+    padding: 1rem;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  }
+
+  .projects-2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+    justify-self: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: #112240;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .projects-3 {
+    grid-column: 5 /span 2;
+    grid-row: 1 / span 3;
+    background-color: #112240;
+    justify-self: center;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .projects-4 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 3;
+    justify-self: center;
+    background-color: #112240;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .projects-5 {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 3;
+    justify-self: center;
+    background-color: #112240;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .projects-6 {
+    grid-column: 5 / span 2;
+    grid-row: 4 / span 3;
+    justify-self: center;
+    background-color: #112240;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  #skills {
+    padding: 0px 10px;
+    color: #e6f1ff;
+    max-width: 100%;
+  }
+
+
+
+
+
+  #skills i {
+    font-size: 5rem;
+    padding: 2rem 1rem;
+  }
+
+
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 4rem 0;
+  }
+
+  .icon-card-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-2 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-3 {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-4 {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-5 {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-6 {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-7 {
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .icon-card-8 {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    background-color: #112240;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+ footer {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ #more {
+  margin: 0 auto;
+  background: white;
+  color: black;
+ }
+
+ #clicked {
+  display: none;
+  background-color: #112240;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #8892b0;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ }

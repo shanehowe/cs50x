@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <div>
+        <p>{{ username }} | Available Funds: {{ cash | usd }}</p>
+        <p></p>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Stock</th>
+                <th scope="col">Shares Owned</th>
+                <th scope="col">Current Price </th>
+                <th scope="col">Value Of Holdings</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for stock in stocks %}
+              <tr>
+                <td>{{ stock.stock_bought | upper}}</td>
+                <td>{{ stock.shares_owned }}</td>
+                <td>{{ stock.price | usd }}</td>
+                <td>{{ stock.value_of_holdings | usd }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </diV>
+    <div>
+      <p>Total Portfolio Value : {{ grand_total | usd }}</p>
+    </div>
+
+{% endblock %}

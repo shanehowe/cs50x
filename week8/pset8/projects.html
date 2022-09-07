@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+
+
+    <title>Shane Howe | Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <ul class="nav justify-content-evenly">
+            <li class="nav-item">
+              <a  class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a id='active' class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html" >Skills</a>
+            </li>
+          </ul>
+    </header>
+
+    <section id="projects">
+
+
+        <div class="projects-grid">
+            <div class="projects-1">
+
+                <a target="_blank" href="https://github.com/shanehowe/ravenous"><h4>Ravenous</h4></a>
+
+                <p>A yelp like clone built with React.js, html and CSS. This web app queries the yelp API.</p>
+
+                <i class="devicon-github-original"></i>
+
+            </div>
+
+            <div class="projects-2">
+                <a target="_blank" href="https://github.com/shanehowe/jamming"><h4>Jamming</h4></a>
+
+                <p>A react app that allows users to search for songs, create a playlist with those songs and save the playlist directly to their spotify! This web app was built with react.js</p>
+
+                <i class="devicon-github-original"></i>
+
+            </div>
+
+            <div class="projects-3">
+                <a target="_blank" href="https://github.com/shanehowe/simpsons-quote-generator"><h4>Simpsons quote generator</h4></a>
+
+                <p>This JavaScript program generates a random quote from a random Simpsons character.</p>
+
+                <i class="devicon-github-original"></i></a>
+
+            </div>
+
+            <div class="projects-4">
+                <a target="_blank" href="https://shanehowe.github.io/piano-keys/"><h4>Piano keys</h4></a>
+
+                <p>Play along in the sequence provided to learn Happy Birthday on the piano.</p>
+
+                <i class="devicon-github-original"></i>
+
+            </div>
+
+            <div class="projects-5">
+                <a target="_blank" href="https://github.com/shanehowe/ufo-game"><h4>UFO game</h4></a>
+
+                <p>A twist on the traditional game we all know called hangman. This C++ program is played in the terminal.</p>
+
+                <i class="devicon-github-original"></i>
+
+            </div>
+
+            <div class="projects-6">
+                <a target="_blank" href="https://github.com/shanehowe/find-your-hat"><h4>Find your hat</h4></a>
+
+                <p>This JavaScript program is a command line game where the goal is to move around a grid avoid falling down holes and find your hat. </p>
+                <i class="devicon-github-original"></i>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer">
+        <button id="more">Want to see more?</button>
+        <section>
+            <p id='clicked'>If you are interested in seeing more programs/projects I have worked on you can check out my <a href="https://github.com/shanehowe" >Github</a>!</p>
+        </section>
+    </footer>
+
+</body>
+<script>
+    const button = document.getElementById('more');
+    const p = document.getElementById('clicked');
+
+    button.addEventListener('click', () => {
+        p.style.display = 'block';
+        document.getElementById('footer').style.flexDirection = 'column';
+    });
+</script>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How long did it take for Brendan Eich to create the programming language JavaScript?</h3>
+
+                <p id="answer"></p>
+                <button type="button" class="btn">10 days</button>
+                <button type="button" class="btn">10 weeks</button>
+                <button type="button" class="btn">10 months</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Is cs50 the greatest free online introduction to computer science course ever?</h3>
+                <p id="answer2"></p>
+                <form onSubmit="return false">
+                    <input id='form' type='text' autocomplete="off" placeholder='Enter your answer here!'/>
+
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+
+        const button = document.querySelectorAll('.btn');
+        const p = document.getElementById('answer');
+
+        // Because querySelectorAll returns array we can iterate through elements
+        button.forEach(btn => {
+
+            btn.addEventListener('click', () => {
+                if (btn.innerHTML == '10 days')
+                {
+                    btn.style.backgroundColor = 'green';
+                    p.innerHTML = 'Correct!';
+
+                    // puts styles back to original style 5 seconds after event listener
+                    setTimeout(() => {
+                        btn.style.backgroundColor = ''
+                        p.innerHTML = ''
+                    }, 5000)
+                }
+
+                else
+                {
+                    btn.style.backgroundColor = 'red'
+                    p.innerHTML = 'Incorrect!'
+
+                    // sets style back to original after 2 seconds
+                    setTimeout(() => {
+                        btn.style.backgroundColor = ''
+                        p.innerHTML = ''
+                    }, 2000)
+                }
+            })
+        });
+
+
+        const p1 = document.getElementById('answer2');
+        const submit = document.getElementById('submit');
+
+        submit.addEventListener('click', () => {
+            const input = document.getElementById('form');
+            if (input.value.toLowerCase() === 'yes' || input.value.toLowerCase() === 'yeah' || input.value.toLowerCase() === 'ya')
+            {
+                p1.innerHTML = 'Correct!';
+                input.style.backgroundColor = 'green';
+
+                setTimeout(() => {
+                    p1.innerHTML = '';
+                    input.style.backgroundColor = '';
+                }, 3000);
+            } else
+            {
+                p1.innerHTML = 'Incorrect!';
+                input.style.backgroundColor = 'red';
+
+                setTimeout(() => {
+                    p1.innerHTML = '';
+                    input.style.backgroundColor = '';
+                }, 3000);
+            }
+        });
+
+    </script>
+</html>

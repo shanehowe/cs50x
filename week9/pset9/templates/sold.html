@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<p>Stock sold! {{ amount | usd }} will be added to your account immediately.</p>
+<br>
+<p>New cash balance: {{ cash | usd }}</p>
+<div class="container">
+    <form action="/sell" method="post">
+        <select class="form-select" aria-label="Default select example" name="symbol">
+            <option selected diabled>Select a stock to sell</option>
+            {% for stock in stocks %}
+            <option value="{{ stock.stock_bought }}" >{{ stock.stock_bought }}</option>
+            {% endfor %}
+          </select>
+          <br>
+          <label>Quantity</label>
+          <input id="range" type="text" name="quantity">
+          <br>
+          <button type="submit" class="btn">Sell Stock(s)</button>
+    </form>
+</div>
+{% endblock %}
